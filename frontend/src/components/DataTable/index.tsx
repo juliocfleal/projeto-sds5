@@ -20,6 +20,7 @@ const DataTable = () => {
     axios.get(`${BASE_URL}/sales?page=${activePage}&size=20&sort=date,desc`)
       .then(response => {
         setPage(response.data);
+        console.log(page)
       });
   }, [activePage]);
 
@@ -44,9 +45,8 @@ const DataTable = () => {
           <tbody>
             {page.content?.map(item => (
               <tr key={item.id}>
-                <td>{formatLocalDate(item.date, "dd/MM/yyyy")}</td>
-
-                <td>{item.seller.name}</td>
+                <td>{formatLocalDate(item.date, "dd/MM/yyyy")} </td>
+                <td>{item.sellerDTO.name}</td>
                 <td>{item.visited}</td>
                 <td>{item.deals}</td>
                 <td>{item.amount.toFixed(2)}</td>

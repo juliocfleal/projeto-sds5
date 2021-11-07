@@ -7,8 +7,9 @@ export type Sale = {
   deals: number;
   amount: number;
   date: string;
-  seller: Seller;
+  sellerDTO: Seller;
 }
+
 export type SalePage = {
   content?: Sale[];
   last: boolean;
@@ -20,10 +21,12 @@ export type SalePage = {
   numberOfElements?: number;
   empty?: boolean;
 }
+
 export type SaleSum = {
   sellerName: string;
   sum: number;
 }
+
 export type SaleSuccess = {
   sellerName: ScrollSetting;
   visited: number;
