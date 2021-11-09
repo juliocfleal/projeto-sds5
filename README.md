@@ -26,7 +26,7 @@ O DashBoard de vendas e uma aplicacao desenvolvida durante o bootcamp Spring Rea
 [Projeto hospedado no Netlify com Heroku](https://dsvendas-julioleal.netlify.app/)
 
 
-### Link Linkedin
+### Autor
 
 
 [Link pessoal do Linkedim](https://www.linkedin.com/in/julio-cesar-freitas-leal-44226916a/)
